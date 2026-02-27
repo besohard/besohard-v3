@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Naman Chambyal | Finance Strategy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+  --dark:#0B1C2D;
+  --blue:#2F80ED;
+  --light:#F5F7FA;
+  --text:#1F2937;
+}
+
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:var(--light);
+  color:var(--text);
+  line-height:1.6;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg,#0B1C2D,#123E63);
+  color:white;
+  text-align:center;
+  padding:120px 20px 100px;
+}
+
+.hero h1{
+  font-size:44px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:18px;
+  opacity:0.85;
+  max-width:700px;
+  margin:auto;
+}
+
+.profile-pic{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-top:40px;
+  border:4px solid white;
+}
+
+/* IMPACT */
+.impact{
+  background:white;
+  text-align:center;
+}
+
+.impact-grid{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.impact-item{
+  flex:1;
+  min-width:200px;
+}
+
+.impact-item h2{
+  font-size:38px;
+  color:var(--blue);
+  margin-bottom:10px;
+}
+
+/* ABOUT */
+.about{
+  background:white;
+}
+
+.about-wrapper{
+  display:flex;
+  gap:80px;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+
+.about-left{
+  flex:1;
+  min-width:300px;
+}
+
+.about-intro{
+  font-size:16px;
+  line-height:1.7;
+  margin-bottom:35px;
+  color:#4b5563;
+}
+
+.about-highlights .highlight{
+  display:flex;
+  gap:18px;
+  margin-bottom:28px;
+}
+
+.about-highlights i{
+  font-size:22px;
+  color:var(--blue);
+  margin-top:6px;
+}
+
+.about-highlights h4{
+  margin:0 0 6px;
+}
+
+.about-highlights p{
+  margin:0;
+  font-size:14px;
+  color:#6b7280;
+}
+
+.about-right{
+  flex:1;
+  min-width:280px;
+}
+
+.about-card{
+  background:#0f172a;
+  color:white;
+  padding:35px;
+  border-radius:18px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+.about-card h3{
+  margin-top:0;
+  margin-bottom:20px;
+}
+
+.about-card ul{
+  list-style:none;
+  padding:0;
+}
+
+.about-card li{
+  margin-bottom:12px;
+  font-size:14px;
+  color:#cbd5e1;
+}
+
+/* PROJECTS */
+.projects{
+  background:#f9fafb;
+}
+
+.section-title{
+  font-size:34px;
+  margin-bottom:50px;
+  text-align:center;
+}
+
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.project-card{
+  background:white;
+  padding:35px;
+  border-radius:18px;
+  box-shadow:0 10px 35px rgba(0,0,0,0.05);
+  transition:0.3s;
+  position:relative;
+}
+
+.project-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 50px rgba(0,0,0,0.08);
+}
+
+.project-number{
+  position:absolute;
+  top:20px;
+  right:25px;
+  font-size:40px;
+  font-weight:700;
+  color:rgba(47,128,237,0.1);
+}
+
+.project-tags{
+  margin-top:20px;
+}
+
+.project-tags span{
+  display:inline-block;
+  background:#eef2ff;
+  color:#2F80ED;
+  font-size:12px;
+  padding:6px 12px;
+  border-radius:999px;
+  margin:4px 6px 0 0;
+}
+
+/* FOOTER */
+footer{
+  background:var(--dark);
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+  font-size:14px;
+}
+
+/* SOCIAL FLOAT */
+.social-float{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.social-float a{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:20px;
+  text-decoration:none;
+  box-shadow:0 8px 18px rgba(0,0,0,0.25);
+  transition:0.3s;
+}
+
+.social-float a:hover{
+  transform:scale(1.1);
+}
+
+.linkedin{background:#0077B5;}
+.telegram{background:#229ED9;}
+.instagram{background:linear-gradient(45deg,#fd1d1d,#e1306c,#833ab4);}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Driving Financial Clarity & Strategic Growth</h1>
+  <p>Finance Strategy Partner helping businesses optimize budgeting, forecasting & performance.</p>
+  <img src="website_photo_cropped.jpg" class="profile-pic">
+</section>
+
+<!-- IMPACT -->
+<section class="impact">
+  <div class="container impact-grid">
+    <div class="impact-item">
+      <h2>₹500Cr+</h2>
+      <p>Budgets Managed</p>
+    </div>
+    <div class="impact-item">
+      <h2>20%</h2>
+      <p>Cost Optimization Delivered</p>
+    </div>
+    <div class="impact-item">
+      <h2>10+</h2>
+      <p>Strategic Initiatives Led</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="container about-wrapper">
+
+    <div class="about-left">
+      <h2>Strategic Finance Professional</h2>
+      <p class="about-intro">
+        I specialize in transforming financial complexity into strategic clarity.
+        My approach combines structured planning, disciplined execution, and
+        data-driven insight to drive measurable business performance.
+      </p>
+
+      <div class="about-highlights">
+        <div class="highlight">
+          <i class="fas fa-chart-line"></i>
+          <div>
+            <h4>Performance Optimization</h4>
+            <p>Improving margins through financial analysis & cost structuring.</p>
+          </div>
+        </div>
+
+        <div class="highlight">
+          <i class="fas fa-coins"></i>
+          <div>
+            <h4>Budget & Forecast Leadership</h4>
+            <p>Designing forward-looking financial models for decision support.</p>
+          </div>
+        </div>
+
+        <div class="highlight">
+          <i class="fas fa-shield-alt"></i>
+          <div>
+            <h4>Risk & Capital Strategy</h4>
+            <p>Evaluating investment efficiency & optimizing capital allocation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-right">
+      <div class="about-card">
+        <h3>Core Competencies</h3>
+        <ul>
+          <li>Financial Planning & Analysis (FP&A)</li>
+          <li>Advanced Budget Forecasting</li>
+          <li>Cash Flow Optimization</li>
+          <li>Cost Control Strategy</li>
+          <li>Financial Reporting & KPI Analysis</li>
+          <li>Business Decision Support</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects">
+  <div class="container">
+    <h2 class="section-title">Selected Experience</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="project-number">01</div>
+        <h3>Financial Planning & Budget Optimization</h3>
+        <p>
+          Led annual budgeting cycles, monitored performance variance, and implemented
+          structured cost optimization initiatives that improved operational efficiency.
+        </p>
+        <div class="project-tags">
+          <span>Budgeting</span>
+          <span>Variance Analysis</span>
+          <span>Cost Reduction</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-number">02</div>
+        <h3>Cash Flow & Working Capital Strategy</h3>
+        <p>
+          Designed rolling cash flow forecasts and liquidity models to strengthen
+          short-term and long-term financial positioning.
+        </p>
+        <div class="project-tags">
+          <span>Liquidity Planning</span>
+          <span>Forecasting</span>
+          <span>Working Capital</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-number">03</div>
+        <h3>Financial Reporting & KPI Analytics</h3>
+        <p>
+          Delivered structured financial reporting dashboards to support
+          executive decision-making and strategic growth initiatives.
+        </p>
+        <div class="project-tags">
+          <span>KPI Reporting</span>
+          <span>Performance Metrics</span>
+          <span>Strategic Planning</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+© 2026 Naman Chambyal. All rights reserved.
+</footer>
+
+<div class="social-float">
+  <a href="https://www.linkedin.com/in/naman-thakur/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://t.me/bessohard" target="_blank" class="telegram"><i class="fab fa-telegram"></i></a>
+  <a href="https://instagram.com/namanchambyal" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+</div>
+
+</body>
+</html>
